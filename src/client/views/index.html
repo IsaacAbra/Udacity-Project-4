@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Evaluate News NLP</title>
+
+    </head>
+
+    <body>
+
+        <header>
+          <h2>Sentiment Analysis</h2>
+        </header>
+        <main>
+            <section>
+
+                    <div id="errorMessage" style="color: red"></div>
+
+                    <input id="name" type="text" name="name" placeholder="Insert name">
+                    <input type="submit" name="" id="submit" value="submit">
+
+            </section>
+
+            <section>
+              <article>
+                <h1 id="score"></h1>
+                <br>
+                <div id="img"></div>
+                <br>
+                <div id="subjectivity"></div>
+                <br>
+                <div id="confidence"></div>
+                <br>
+                <div id="irony"></div>
+                <br>
+                <div id="model"></div>
+              </article>
+            </section>
+        </main>
+        <footer>
+          <h3>Project #4 for Udacity's Front End program</h3>
+        </footer>
+        <!-- <script src="../js/formHandler.js"></script> -->
+      <script>
+         // Check that service workers are supported
+         if ('serviceWorker' in navigator) {
+             // Use the window load event to keep the page load performant
+             window.addEventListener('load', () => {
+                 navigator.serviceWorker.register('/service-worker.js');
+             });
+         }
+      </script>
+    </body>
+</html>
