@@ -26,7 +26,7 @@ function handleSubmit(e) {
       console.log("Name could not be found.")
     }
 
-    console.log("::: Forrgorord morningm Submitted :::")
+    console.log("::: Form Submitted :::")
 }
 
 async function updateUI(res) {

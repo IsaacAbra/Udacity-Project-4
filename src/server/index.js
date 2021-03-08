@@ -32,7 +32,7 @@ app.listen(8081, function () {
 app.post("/article", async (req, res) => {
 
   console.log("Req", req.body.formText)
-  const fullUrl = `${url}${process.env.API_KEY}&of=json&name=${req.body.formText}&lang=en&`;
+  const fullUrl = `${url}${process.env.API_KEY}&of=json&txt=${req.body.formText}&lang=en`;
   console.log("Full url", fullUrl);
   const response = await fetch(fullUrl, {method: 'POST'})
 
